@@ -34,6 +34,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
 app.engine("ejs",ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
+// Serve media folder (for images stored in repo root `media/`)
+app.use('/media', express.static(path.join(__dirname, 'media')));
 
 
 
