@@ -1,2 +1,2 @@
 # delta-project
-Wanderlust
+Wanderlust (Airbnb clone).
